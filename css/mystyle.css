@@ -1,0 +1,441 @@
+/* Table of Contents
+----------------------------------------------------
+- General Content
+- Typography
+- Header & Navigation
+- Image & Media
+- Footer
+- Media Queries
+---------------------------------------------------- */
+
+/* General Content
+---------------------------------------------------- */
+.mainBlock{padding-top: 3%;}
+.row{padding:2% 0;}
+.resume{background-color: #3F3E4C;}
+
+.centerParagraph {
+	padding: 2% 15%;	
+	position: relative;
+}
+
+
+.accordion {
+    margin:1em 0;
+    padding: 30px 10px;
+}
+
+.accordion h3 {
+    background: #828282;
+    font-family: 'Abel';
+    font-weight: bolder;
+    text-shadow: 0px 0px 3px #000;
+    text-align: center;
+    color:#fff;
+    cursor:crosshair;
+    margin:0 0 1px 0;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding:30px 10px;
+    margin: 10px;
+}
+
+.accordion h3:hover{
+    background: #132530;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.accordion div.pane {
+    padding:5px 10px
+}
+
+
+.pane {
+	margin: 1% 10px;
+	padding: 5px 5px;
+}
+
+.projectLink {	
+	border: 3px solid #132530;	
+	color: #132530;
+	text-align: center;
+	padding: 2px 5px;
+	margin: 2px 2px;
+	display: inline-block;
+}
+
+.projectLink i{
+	padding: 0 0 0 2px;
+}
+
+.pane a.projectLink:hover{
+	text-decoration: none;
+	background-color: #132530;
+	color: #fff;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+hr.style-divider {
+    padding: 0;
+    border: none;
+    border-top: 2px solid #ccc;
+    color: #ccc;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 50px auto;
+}
+hr.style-divider:after {
+    content: "";
+    width: 15px;
+  	height: 15px;
+    display: inline-block;
+    position: relative;
+    top: -.4em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    
+    background-color: #8b8b8b;
+  	transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	-webkit-transform: rotate(45deg);
+}
+
+
+
+/* Typography
+---------------------------------------------------- */
+body{
+	font-family: 'Abel', sans-serif;
+	font-size: 1.5em;
+	color: #000;
+	padding-top: 60px;
+	position: relative;
+}
+
+
+h2.introName{
+	font-family: 'Julius Sans One', sans-serif;	
+	font-size: 7vw;
+	display: inline-block;
+	color: #eeeeee;
+	display: block;
+	font-weight: bolder;
+}
+
+p.introduction {
+	font-size: 1.1em;
+}
+
+p.bio{
+	font-family: 'Julius Sans One', sans-serif;	
+	font-size: 3vw;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+
+h1.title{
+	font-family: 'Julius Sans One', sans-serif;	
+	font-size: 2.5em;
+	color:#132530;
+	display: block;
+}
+
+
+
+h1.quote{
+	font-family: Arial;
+	text-align: center;
+	font-size: 7vw;
+	letter-spacing: 5px;
+	color: #132530;
+	text-shadow: 0px 0px 2px #FFFFFF;
+}
+
+h2.quote{
+	font-family: 'Julius Sans One', sans-serif;	
+	text-align: center;
+	display: block;
+	font-size: 3vw;
+	margin: 0em 3em 1em 3em;
+	color: #FFFFFF;
+	font-weight: bolder;
+	background-color: #d8d8d8;
+}
+
+h2.title{
+	font-family: 'Julius Sans One', sans-serif;	
+	font-size: 1.7em;
+	color: #132530;
+	display: block;
+	padding: 20px 10px;
+}
+
+.centerParagraph p{
+	text-align: center;
+}
+
+
+h2.resumeCategory{
+	font-family: 'Julius Sans One', sans-serif;
+	color: #FFFFFF;
+}
+
+
+h3.resumeTitle{
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+p.resumeDetail{
+	font-family: 'Abel',sans-serif;
+	color: #eeeeee;
+	font-size: 15px;
+}
+
+h4.resumePlace{
+	font-family: 'Abel',sans-serif;
+	color: #FFFFFF;
+	font-size: 17px;
+	margin: 10px 0px 5px 0px;
+}
+
+
+
+/* Header & Navigation
+---------------------------------------------------- */
+.navbar-brand{
+	margin: 15px 0 15px 0;
+	float: left;
+	text-align: center;
+}
+.navbar-brand a{
+	display: inline;
+	font-size: 2.5em;
+	color: #132530;
+	text-decoration: none;
+	border: 3px solid #132530;
+	text-transform: uppercase;
+	padding: 1px 10px 0px 10px;
+	margin: 0;
+}
+
+.navbar-brand a:hover{
+	background-color: #132530;
+	color: #fff;
+	border: 3px solid #132530;
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+
+.navbar-toggle {
+	margin: 1.3em 2em;
+}
+
+.menu-content a{
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family:'Julius Sans One', sans-serif;	
+	margin: 0px auto;
+}
+
+div.welcomeHeader {	
+	background-image: url(../images/background/welcome.jpg);
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
+
+div.welcomeQuote {
+	margin: 5em 2em 6em 2em;
+	float: right;
+	top: 20%;
+  	left: 7%;
+  	text-align: center;
+}
+
+#navbarSocial {
+	margin: -10px 0 0 0;
+}
+
+/* Image & Media
+---------------------------------------------------- */
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../images/logo/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+img{max-width: 100%;}
+img.lifePic{
+	border-radius: 5px;
+	text-align: center;
+	margin: .3em auto;
+}
+.portfolio img:hover{opacity:0.8;}
+.portfolio {
+	text-align: center;
+}
+
+#contentd {
+	height: 750px;
+	width: 100%;
+	margin-top:-10px; 
+	position: relative;
+	z-index: 1;
+}
+
+.parallexBanner {
+	position: relative;
+}
+
+#newyorkBackground {
+	position: relative;
+	z-index: -1;
+	padding: 0 0;
+	margin: -970px 0px 0px 0px;
+	height: auto;
+	width: 110%;
+}
+
+.inpageSocial {
+	margin: 2% auto;
+	text-align: center;
+}
+
+.inpageSocial a{
+	text-decoration: none;
+	border: 3px solid #132530;
+	padding: 3px 5px;
+	color: #132530;
+	text-align: center;
+}
+
+.inpageSocial a i{
+	padding: 0 0 0 2px;
+}
+
+.inpageSocial a:hover{
+	background-color: #132530;
+	color: #fff;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+
+
+/* Footer
+---------------------------------------------------- */
+ul.social{
+	display: block;	
+	list-style-type: none;
+	text-align: center;
+	margin: 10px 40px 30px 0;
+}
+ul.social li{
+	font-size: em;
+	display: inline;
+	padding:0 2%;
+}
+ul.social li a{
+	color: #666;
+}
+
+
+ul.social li.instagram a:hover{color: #843232;}
+ul.social li.linkedin a:hover{color: rgb(34, 134, 187);}
+ul.social li.github a:hover{color: #bc4c4c;}
+
+
+ul.contactAddress {
+	display: block;
+	list-style-type: none;
+	text-align: center;	
+	font-family: Arial, sans-serif;
+	margin: 0px 40px 0 0;
+}
+
+ul.contactAddress li.emailAddress a {
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+ul.contactAddress li.emailAddress a:hover {color: rgb(34, 134, 187);}
+
+ul.contactAddress li{
+	margin: 1.5em auto;
+}
+
+.resumeDownload{
+
+	text-align: center;
+}
+
+.resumeDownload a{
+	font-size: 1.5em;
+	color: #000;
+	text-decoration: none;
+	border: 3px solid #000;
+	text-transform: uppercase;
+	padding: 10px 5px;
+}
+
+.resumeDownload a i{
+	font-size: 1em;
+	margin: 5% auto;
+	padding: 2px 4px;
+}
+
+.resumeDownload a:hover{
+	background-color: #000;
+	color: #fff;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+footer{
+	background-color:#3F3E4C;
+	text-align: center;
+  	position: relative;
+  	padding: 20px 15px 5px 15px;
+}
+
+
+h1.bottomGoodbye{
+	font-family: 'Julius Sans One', sans-serif;	
+	font-size: 2.5em;
+	color:#FFFFFF;
+	display: block;
+	text-align: center;
+
+}
+
+p.copyright{
+	text-align: center;
+	color: #666;
+	font-size: 1em;
+}
+
+/* Media Queries
+---------------------------------------------------- */
