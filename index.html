@@ -1,380 +1,462 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <!-- Aug 30th -->
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Vincent Wang</title>
-  <meta name="description" content="Hi! My name is Yuehui Wang. People also call me Vincent. I am an undergrad majoring in Computer Science at The Pennsylvania State University. ">
-  <meta name="author" content="vwang">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
-  
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">  
-  -->
-
-  
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
   <link rel="stylesheet" href="css/mystyle.css">
-
-
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
-  <link rel="shortcut icon"
- href="favicon/w.png" />
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/pinterestGrid.css">
+  <link rel="shortcut icon" href="favicon/w.png" />
 </head>
 
-<body id="top"> <!-- for logo click to scroll to the top-->
-
-  <header class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">     
-        <div class="navbar-header">
-  	      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-  	      <span class="icon-bar"></span>
-  	      <span class="icon-bar"></span>
-  	      <span class="icon-bar"></span>
-  	      </button> <!-- button -->
-  	      <div class="navbar-brand"><a href="#top">Wang.</a></div> <!-- logo -->
-        </div> <!-- navbar header-->
-
-        <div class = "collapse navbar-collapse" id = "navbarMenuDrop" style="margin:15px 10px 0px 10px;">
-
-        	<ul class= "nav navbar-nav navbar" id="navbarSocial">
-  			      <li class="github" ><a href="https://github.com/vincwang" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>
-              <li class="linkedin"><a href="https://linkedin.com/in/vincwang" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
-              <li class="email"><a href="mailto:v_wang@outlook.com"><i class="fa fa-envelope-square fa-3x"></i></a></li>
-          </ul> <!-- navbar social icons -->
-
-          <ul class="nav navbar-nav navbar-right">
-              <li class="menu-content"><a href="#about">About</a></li>
-              <li class="menu-content"><a href="#projects">Projects</a></li>
-              <li class="menu-content"><a href="#resume">Resume</a></li>
-              <li class="menu-content"><a href="#contact">Contact</a></li>
-          </ul> <!-- navbar menu -->
-
-        </div> <!-- collapse navbar-->
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- toggle button -->
+        <div class="vincentwang">
+          <a href="#top">Vincent Wang</a>
+        </div>
+        <!-- vincent wang -->
       </div>
-  </header> <!-- navbar -->
+      <!-- navbar header-->
 
-  <div class="row welcomeHeader mainBlock"> 
-	   	<div class="welcomeQuote" >
-	        <h2 class="introName">Dream <small>&</small> Beyond</h2>
-	        <p class="bio">a Computer Science major at <strong>Penn State</strong></p>
-	    </div> 	      
-  </div>   <!-- Welcome Banner -->
-
-
-
-  <div class="row" style="background: #F8F8F8; z-index:1">
-
-    <div class="container mainBlock" id="about">
-    <center class="container row">
-        <h1 class="title"> About </h1>
-        <hr class="style-divider"/>
-    </center>
-
-    <div class="centerParagraph row">
-      <p class="introduction">I am a senior at The Pennsylvania State University majoring in Computer Science, with two minors in Mathematics and Statistics. <br><br> I have had multiple internship/co-op experiences. My first internship was at SoShare Mobile as a functional tester in a web-based system team. I also worked at Edible Arrangements as a web developer, where I developed and improved several web applications. <br><br> Most recently, I worked as a software engineer co-op at Lutron Electronics on a Smart Home product (Caséta Wireless). Over 8 months of work, I was involved in multiple projects including building an user activity recommendation system, developing an “Away” feature on an iOS application and a system-wide data report generator. 
-      <!-- 
-      <br><br>I am currently seeking an internship position in Software Engineering for Summer 2017.
-      -->
-</p>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="menu-content"><a href="#about">About</a></li>
+          <li class="menu-content"><a href="#experience">Experience</a></li>
+          <li class="menu-content"><a href="#projects">Projects</a></li>
+          <li class="menu-content"><a href="#talks">Talks</a></li>
+          <li class="menu-content"><a href="#awards">Awards</a></li>
+          <li class="menu-content"><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- navbar menu -->
+      </div>
+      <!-- collapse navbar-->
     </div>
-  </div>  <!-- mainBlock about -->
-
-  	<center >		
-  		<h2 class="title" > A peek into my life </h2>
-	  </center>
-
-  	<div class="container">
-        <div class="col-sm-3 col-xs-6 portfolio">
-            <img class="lifePic" src="images/life/tennis.jpg" />
-        </div>
-        <div class="col-sm-3 col-xs-6 portfolio">
-            <img class="lifePic" src="images/life/firstdayofwork.jpg" />
-        </div>
-        <div class="col-sm-3 col-xs-6 portfolio">
-            <img class="lifePic" src="images/life/boating.jpg" />
-        </div>
-        <div class="col-sm-3 col-xs-6 portfolio">
-            <img class="lifePic" src="images/life/cooking.jpg" />
-        </div>
-    </div>
-
-    <br>
-
-  	<div class="container">
-        <div class="col-sm-3 col-xs-6 portfolio">
-            <img class="lifePic" src="images/life/rafting.jpg" />
-        </div>
-        <div class="col-sm-3 col-xs-6 portfolio">
-            <img class="lifePic" src="images/life/hiking.jpg" />
-        </div>
-        <div class="col-sm-3 col-xs-6 portfolio">
-            <img class="lifePic" src="images/life/colorrun.jpg" />
-        </div>
-        <div class="col-sm-3 col-xs-6 portfolio">
-            <img class="lifePic" src="images/life/family.jpg" />
-        </div>
-    </div>
-
-    <br>
-
-    <div class="inpageSocial">
-      <a href="https://instagram.com/vinc_wng/" target="_blank">Follow me on <i class="fa fa-instagram fa-lg"></i></a>
-    </div>
-  </div> <!-- A peek into life, pictures -->
+  </nav>
 
 
-  <div class="parallexBanner">
-    <img id="newyorkBackground" src="images/background/newyork.jpg"/>
-  	<h1 class="quote"> <strong>Live <small>&</small> Travel</strong> </h1>
-  	<h2 class="quote">Wherever you go, go with all your heart.</h2>
+
+  <div class="openning">
+    <img src="./images/background/welcome.jpg">
   </div>
 
+  <div class="container" id="about">
+    <center class="container row">
+      <h1 class="title">ABOUT ME</h1>
+      <hr class="style-divider" />
+    </center>
+  </div>
 
-
-<div class="row" id="projects" style="background: #F8F8F8; z-index:1">
-
-	<div class="container " id="projects">
-	  <center class="container row">
-	    <h1 class="title"> Projects </h1>
-	    <hr class="style-divider"/>
-	  </center> <!-- projects header -->
-
-  	<div class="centerParagraph row">
-  		<p style="font-size:18px">Below are some projects that I've done for school and work.</p>
-  		<p style="font-size:18px">Due to Confidentiality Agreements, source code for Work projects won't be accessible to public</p>
-		</div>
-
-    <div class="inpageSocial">
-      <a href="https://github.com/vincwang/" target="_blank">View more projects <i class="fa fa-github-square fa-lg"></i></a>
+  <div id="infoWrapper">
+    <div class="introContainer">
+      <div class="aboutMePic">
+      </div>
+      <div class="aboutMeDesc">
+        <p class="selfIntroduction">I am a senior at The Pennsylvania State University majoring in Computer Science, with two minors in Mathematics and Statistics. <br><br> I have had multiple internship/co-op experiences. My first internship was at SoShare Mobile as a functional
+          tester in a web-based system team. I also worked at Edible Arrangements as a web developer, where I developed and improved several web applications. <br><br> Most recently, I worked as a software engineer co-op at Lutron Electronics on a Smart
+          Home product (Caséta Wireless). Over 8 months of work, I was involved in multiple projects including building an user activity recommendation system, developing an “Away” feature on an iOS application and a system-wide data report generator.
+        </p>
+      </div>
     </div>
-	</div> <!-- container projects -->
+  </div>
 
-		<div class ="container">
-      <div class="col-sm-6 accordion">
-      	  	<h3 class="projectName" style="background-image: url('images/projectPicture/casetaApp.png');">Caseta Smart Away</h3>
-          	<div class="pane">
-          		<img src="images/projectPicture/lutroncasetawireless.jpg"/> <br><br>
-              	<p>This is an iOS project that I was involved in during my time at Lutron Electronics, working on a Smart Home control system called Caseta Wireless. This feature will allow users to set an "Smart Away" mode for the house, that will randomly change the lights in the house at night time to make a home appeared "lived-in" while it's unoccupied. <br> <br>
-              	My main responsibilities include co-designing the feature spec and implementing the functionalities on iOS. The App helps users set up the feature by selecting lights, activation mode (Manual/Automatic) and etc. The App communicates with the system through a cloud service as many other iOT products. <br> <br>
-              	I feel very happy to have worked on this feature with the team, because it's a feature that is directly used by customers. And truely makes me feel proud when customers are using products that I have worked on!
-              	</p>    	
-              	<h4>Technology used: Objective-C, iOS, LEAP, Nest Home/Away Assist, GeoFencing, iOT</h4>
-              	<a class = "projectLink" href="http://www.lutron.com/en-US/Products/Pages/SingleRoomControls/CasetaWireless/Overview.aspx" target="_blank">To Read More</a>
-              	<a class = "projectLink" href="https://itunes.apple.com/us/app/lutron-app-for-caseta-wireless/id886753021?mt=8" target="_blank">View in App Store</a>
-          	</div>
-
-          <h3 class="projectName" style="background-image: url('images/projectPicture/calculation.jpg');">Expression Evaluation</h3>
-          <div class="pane">
-              <p>This project brought my understanding in Data Structures to a whole new level. It was a one-semester long project that was broken into 7 different phrases. This application recursively tokenized input expressions like (5+7*(10/2)) into numbers and operators to track the structures, which would be converted into a linked list. <br><br> 
-              One phrase of the project was to use post-fix calculation on the linked list. Another phrase was to place the numbers and operators into a expression tree, then go through the tree to calculate the result. It could also do variable calculation retrieving data from a variable tree. For instance, if user define x=10, then (x+5) will return 15. In addition, this application also supported function definition such as gcf(a,b) and sqr(a). <br><br>
-              To look back, I am very glad that I did this project. It was very crucial in enhancing my understanding in Data Structures. Although, I struggled through every phrase of it.</p>
-              <img src="images/projectPicture/basicCalculator.jpg"/>
-              <h4>Technology used: C++, Linked List, Stacks and Queues, Binary Search Trees, Mutual Recursion</h4>
-              <a class = "projectLink" href="https://github.com/vincwang/basic-calculator" target="_blank">Source Code<i class="fa fa-github-square fa-lg"></i></a>
-          </div>
-          
-          
-          <h3 class="projectName" style="background-image: url(images/projectPicture/portalIntegration.png);">CRM Portal Integration</h3>
-          <div class="pane">
-              <p>This was a project I did for my internship at Netsolace, which provided software support to Edible Arrangements. I was given the task to integrate their CRM portal with LogMeIn Rescue Remote Connection, so that the technicians would be able to use LogMeIn Rescue functionality on their own CRM portal. <br><br>
-              The API used Http Web Request to verify the credentials of the technician. The communication method used in my project was HTTP GET. This protocol created a query string of the name and value pairs and then appended the query string to the URL of the script on the server that handled the request. If the credentials were valid, the technician would be able to log in his account and create pin codes for customers without getting on LogMeIn Rescue's website</p>
-              <h4>Technology used: ASP.NET, Visual Basic, HttpWebRequest</h4>
-              <a class = "projectLink" href="http://www.vinwang.com/blog/logmein-rescue-api-tutorial/" target="_blank">Read more on my blog</a>              
-          </div>
-
-          <h3 class="projectName" style="background-image: url(images/projectPicture/drawingApp.png);">Drawing Application</h3>
-          <div class="pane">
-              <p>A two dimensional drawing application built in Java. It could draw in different shapes: line, oval and rectangle. You could also choose the stroke width, line width, gradient level and etc. It also had clear and undo buttons that brings better user experience.</p>
-              <h4>Technology used: Java, Apache Derby Database</h4>
-              <a class = "projectLink" href="https://github.com/vincwang/2DDrawing" target="_blank">Source Code<i class="fa fa-github-square fa-lg"></i></a>
-          </div>
-
-          <h3 class="projectName" style="background-image: url(images/projectPicture/sayItRightDoItRight.png);">Say it right, Do it right</h3>
-          <div class="pane">
-              <p>This was done at a Global Game Jam event hosted at Lutron. We made this language learning game with Unity. It's a multi-language learning game in pixel graphics. Player learns vocab words by dragging and dropping words into sentences to make a character repeat their daily routine. Then they watch the character act out the phrases whether they choose the right word or not!</h4>
-              <h4>Technology used: Unity, C#</h4>
-              <a class = "projectLink" href="http://globalgamejam.org/2016/games/say-it-right-do-it-right" target="_blank">View Game Page</a>
-              <a class = "projectLink" href="https://github.com/silverhammermba/ggj2016" target="_blank">Source Code<i class="fa fa-github-square fa-lg"></i></a>
-          </div>
-      </div> <!-- left row accordion -->
-
-      <div class="col-sm-6 accordion">
-      		<h3 class="projectName" style="background-image: url('images/projectPicture/Smart-Bridge.png');">Recommendation System</h3>
-          <div class="pane">
-              <p>
-              Lutron's Smart Home product Caseta Wireless supports "scene", which allows user to define a scene by selecting a group of devices and their levels (eg: turn on Kitchen light and open bedroom shade). Scenes can be activated manually on the App or automatically through time clock schedule. <br><br> 
-              This project's goal is to monitor users' light usage activities, and find trends to suggest scheduled scenes. For example, if a user turns on bedroom light and kitchen light around 7 AM everyday, the program should suggest them to set a scheduled scene to automate this event. <br><br>
-              On a high level view, this project can be broken down to three parts: Collect data, Analyze to find trends, Present the scene to user. It's a co-op project meant for POC purpose, therefore I have been involved from end to end of this project. The program captures the live event data from the cloud, and analyze them when it has a stash of events. Then finally it needs to send the scene to users via the App to view and edit it.<br><br>
-              Throughout the development of this feature, there were times that I felt frustrated because it was kind like "shooting in the dark" for me to come up with algorithm to find trends in data without any data science background. But there are also times I felt very motivated and excited when I see reasonable outputs from the program and positive feedbacks from testers. <br><br>
-              Note: This feature has only been tested on internal users at Lutron, and it's not meant for Production cutomers yet. Production Customers light usage was never monitored during the development of this feature.
-              </p>
-              <h4>Technology used: Java, Spring, MySql, Objective-C</h4>
-          </div>
-
-          <h3 class="projectName" style="background-image: url('images/projectPicture/map.png');">Sales Data Analysis App</h3>
-          <div class="pane">
-              <p>Finally did I finish my Sales Analysis Map application! It's the most robust web application that I have ever done for Edible Arrangements. This mapping application will take live store sales data from Edible Arrangements' database, and populate the data into the map. The goal is to have more visualize sales data for the company to view. This is essentially a two-level map that combines the USA map and state maps after clicked. On the USA map, the total sales of a state will be presented and their distributions. After user clicks into a state, the map will zoom in to the specific state, and show stores' sales on their locations!
-              <br>
-              <img src="images/projectPicture/US-map.png"/>
-              <img src="images/projectPicture/State-map1.png"/>
-              <img src="images/projectPicture/State-map2.png"/>
-
-              <br>I have to admit that the entire process is a learning process for me. I have never dived so deep down into ASP.NET before. Being able to make some application for the company and help them to make better business decisions feels very much better than earning an A on homework. I am very thankful to having this project. </p>
-              <h4>Technology used: ASP.NET, Google Map API, JSON, jQuery, Javascript</h4>
-              <a class = "projectLink" href="http://www.vinwang.com/blog/sales-analysis-map-using-asp-net-and-sql-server/" target="_blank">Read more on my blog</a>
-              <a class = "projectLink" href="https://www.youtube.com/watch?v=pCDfa2dNxIg" target="_blank">Watch a tour on YouTube</a>
-          </div>
-
-          <h3 class="projectName" style="background-image: url(images/projectPicture/magicianhat.png);">Magician Agent</h3>
-          <div class="pane">
-              <p>Magician Agent was a CRM software built with Derby database and Java. The programming design was Object Oriented. The UI was created using NetBeans GUI generator. <br><br> 
-              This software could manage bookings among customers, magicians, waitlist and holidays using relational database. It could add and delete magicians and holidays. It could also assign customers to free magicians. If no magician was free, it would waitlist the customer and assign to a magician when one became free.</p>
-              <h4>Technology used: Java, Apache Derby Database</h4>
-              <a class = "projectLink" href="https://github.com/vincwang/MagicianAgent" target="_blank">Source Code<i class="fa fa-github-square fa-lg"></i></a>
-          </div>
-          
-
-          <h3 class="projectName" style="background-image: url(images/projectPicture/registration.png);">Customer Registration</h3>
-          <div class="pane">
-              <p>This was my very first project with ASP.NET and Microsoft SQL Server. When I came to my job, I knew nothing about ASP.NET programming, which was what my company primarily used for their websites. Then I bought a .NET book for about $30 and dived into it for two weeks. My manager then told me to practice by building a customer registration dashboard.<br><br>
-              This application contains three main parts: login page, registration page and manager page. The user would register with their information such as name and email. The registration page contained validators that check the email, phone number, password strength and etc. The information would be stored in SQL database. After registration, the customers will be able to log in and see or edit their information. The manager page contains a table that has all customers' information.</p>
-              <h4>Technology used: HTML, ASP.NET, C#, Microsoft SQL Server</h4>
-          </div>
-      </div> <!-- right row accordion -->
-
-    </div> <!-- container for the 2-row accordions-->
-
-	  <img id= "workstation" src="images/background/workstation.jpg" width="100%" />  
-
-</div>   <!-- mainBlock Projects -->
-
-
-<div class="mainBlock container" id="resume" >
-
-  <center class="container row">
-    <h1 class="title"> Resume </h1>
-    <hr class="style-divider"/>
+  <center>
+    <h2 class="title"> A peek into my life </h2>
   </center>
 
-  <div class="inpageSocial">
-    <a href="file/YuehuiWangResume.pdf" target="_blank">Download Resume <i class="fa fa-file-pdf-o fa-lg"></i></a>
+  <div class="container">
+    <div class="col-sm-3 col-xs-6 portfolio">
+      <a href="images/gallary/qingyuanshan.jpg" data-lightbox="example-set" data-title="">
+        <img class="gallaryPic" src="images/gallary/qingyuanshan-thumb.jpg" alt="" />
+      </a>
+    </div>
+    <div class="col-sm-3 col-xs-6 portfolio">
+      <a class="example-image-link" href="images/gallary/rafting.jpg" data-lightbox="example-set" data-title="">
+        <img class="gallaryPic" src="images/gallary/rafting-thumb.jpg" alt="" />
+      </a>
+    </div>
+    <div class="col-sm-3 col-xs-6 portfolio">
+      <a class="example-image-link" href="images/gallary/colorrun.jpg" data-lightbox="example-set" data-title="">
+        <img class="gallaryPic" src="images/gallary/colorrun-thumb.jpg" alt="" />
+      </a>
+    </div>
+    <div class="col-sm-3 col-xs-6 portfolio">
+      <a class="example-image-link" href="images/gallary/tennis.png" data-lightbox="example-set" data-title="">
+        <img class="gallaryPic" src="images/gallary/tennis-thumb.png" alt="" />
+      </a>
+    </div>
   </div>
-  <br>
-</div>  <!-- mainBlock resume header-->
+
+  <div class="clickButton">
+    <a href="https://instagram.com/vinc_wng/" target="_blank">Follow me on <i class="fa fa-instagram fa-lg"></i></a>
+  </div>
 
 
-<div class="row resume">
 
-    <div class="container">     
-      <div class="col-sm-4">
-        <h2 class="resumeCategory">Education</h2>
-      </div>        
-      <div class="col-sm-8">
-        <h3 class="resumeTitle"><b>The Penn State University</b></h3>
-        <p class="resumeDetail">Class of 2017, University Park PA <br>B.S. in Computer Science <small>&</small> Double Minor in Math and Statistics 
-        <br>Relevant Courses: 
-        <br>● Completed: <i> Data Structures in C++; OOP with Web in Java; Digital Circuit Design; Discrete Math/CS; Systems Programming in C; Computer Organization and Design; Probability Theory; Numerical Computations; </i>
-        <br>● Ongoing Fall 2016: <i> Data Structures and Algorithms; Operating Systems; Database Management; Programming Language Concepts </i>
-</p>
+  <div class="container" id="experience">
+    <center class="container row">
+      <h1 class="title">EXPERIENCE</h1>
+      <hr class="style-divider" />
+    </center>
+  </div>
+
+  <div class="back">
+    <img src="./images/background/workstation.jpg">
+  </div>
+
+
+
+  <div class="row">
+    <div class="container">
+      <center>
+        <h4 class="title">Internships</h4>
+      </center>
+      <div class="col-md-6 accordion">
+        <h3 class="orangeAccordion" style="background-image: url(images/company/Lutron.png);">+</h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">Lutron Electronics</strong>
+            <strong style="float:right">Coopersburg, PA</strong>
+            <br/>
+            <strong style="float:left">Software Engineer Co-op</strong>
+            <strong style="float:right">January 2016 - August 2016</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" />I worked with the Caséta Wireless team on an IoT product for smart homes that automates lights, window shades and 3rd party products.
+            <br /><br />I developed a Schedule Recommendation System in Java that analyzes user activity data to find "trends", and suggest them to users for automation. Also was I involved in development of a feature called "Smart Away", which randomly turns on and off selected
+            lights to make a home seem occupied while it's empty. I also worked with the marketing team to build a data analysis program in C# that processes system-wide data and automate reports in Excel.
+            <br /><br /><strong>Primary Technologies Utilized: iOS, Java, MySql, C#, Git, Xively</strong>
+          </p>
+        </div>
+
+        <h3 class="blueAccordion" style="background-image: url(images/company/parkingbee.png);">+</h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">ParkingBee</strong>
+            <strong style="float:right">State College, PA</strong>
+            <br/>
+            <strong style="float:left">Full-stack Web Developer</strong>
+            <strong style="float:right">October 2016 - Present</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" />Currently working part-time at ParkingBee, a parking marketplace startup.
+            <br /><br />I work on MEAN stack web applications. My primary tasks include design and development of new products and support existing applications.
+            <br /><br /><strong>Primary Technologies Utilized: MongoDB, Express.js, AngularJS, and Node.js</strong>
+          </p>
+        </div>
+      </div>
+      <!-- left row accordion -->
+
+      <div class="col-md-6 accordion">
+        <h3 class="greenAccordion" style="background-image: url(images/company/edible.png);">+</h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">Edible Arrangements</strong>
+            <strong style="float:right">Wallingford, CT</strong>
+            <br/>
+            <strong style="float:left">Software Development Intern</strong>
+            <strong style="float:right">May 2015 - August 2015</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;"/>I worked with the Web Development team that provided web solutions to thousands of Edible Arrangements franchises and customers world-wide.
+            <br /><br />My projects included building a mapping analysis application using ASP.NET and Google Web API to analyze live sales data retrieved from Microsoft SQL server.
+            I was also involved in improving and integrating the interncal CRM portal with 3rd party technologies such as LogMeIn Rescue remote connection. I also worked on redesigning
+            UI elements on edible.com and some outdated applications.
+            <br /><br /><strong>Primary Technologies Utilized: HTML5, ASP.NET, Google Web API, SQL</strong>
+          </p>
+        </div>
+
+        <h3 class="yellowAccordion" style="background-image: url(images/company/soshare.png);">+</h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">SoShare Mobile Group</strong>
+            <strong style="float:right">Beijing, China</strong>
+            <br/>
+            <strong style="float:left">Functional Test Intern</strong>
+            <strong style="float:right">June 2014 - August 2014</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" />A leading Mobile Virtual Network Operator in China.
+            <br /><br />This was my first internship experience during college. As a functional tester, I worked closely with the product design team to learn
+            about project specifications. I was involved in testing of the managements systems on web, mobile and phone texting platforms. My main tasks included
+            designing test cases and executing test flows.
+            <br /><br /><strong>Primary Technologies Utilized: Javascript console</strong>
+          </p>
+        </div>
+      </div>
+      <!-- right row accordion -->
+    </div>
+    <!-- container for the 2-row accordions-->
+  </div>
+
+  <div class="container">
+    <center class="container row">
+      <h4 class="title">Campus Involvement</h4>
+    </center>
+  </div>
+
+  <div class="row">
+    <div class="container">
+      <div class="col-md-6 accordion">
+        <h3 class="navyAccordion" style="text-align:center;">Engineering Envoy<span style="float:right;">+</span></h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">College Of Engineering, Penn State</strong>
+            <strong style="float:right">University Park, PA</strong>
+            <br/>
+            <strong style="float:left">Envoy</strong>
+            <strong style="float:right">September 2015 - Present</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" /> As an engineering envoy, my main responsibility is to help promote
+            programs supported by both College of Engineering and the Engineering Career Office. I host walk-in advising hours for engineering students
+            and help students with résumés, cover letters, interviews, and professionalism at work.
+            In addition, I also have presented in class rooms on topics like career searching.
+          </p>
+        </div>
+
+        <h3 class="pinkAccordion" style="text-align:center;">Paws of Friendship<span style="float:right;">+</span></h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">Paws of Friendship, Penn State</strong>
+            <strong style="float:right">University Park, PA</strong>
+            <br/>
+            <strong style="float:left">Recruitment Chair</strong>
+            <strong style="float:right">January 2016 - August 2016</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" /> Paws of Friendship aims to provide members with
+            service opportunities that enable them to be engaged in the local community and provide support for displaced children
+            through the donation and distribution of stuffed animals.
+            <br /><br />I self-built and maintained the club website to present club news and events. As a recruitment chair, I also
+            recruited new members at involvement fairs and managed club ListServ account. I was also actively involved in various
+            activities including bake sales, community events and THON
+          </p>
+        </div>
+
+        <h3 class="jadeAccordion" style="text-align:center;">Leonhard Center Speaking Contest<span style="float:right;">+</span></h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">College of Engineering, Penn State</strong>
+            <strong style="float:right">Coopersburg, PA</strong>
+            <br/>
+            <strong style="float:left">Semi-finalist</strong>
+            <strong style="float:right">Spring 2015</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" />To raise the level of presentations given by engineering
+            undergraduates, the <a href="http://www.engr.psu.edu/speakingcontest/index.aspx" target="_blank">Leonhard Center</a> for the
+            Enhancement of Engineering Education has initiated a contest in which engineering students from Penn State's College of Engineering
+            vie to give the best 10-minute presentation that presents an engineering solution to a societal problem.
+            <br /><br />I, along with another student, was elected to represent the class to present at the speaking contest. My topic was
+            utilizing 3D bio-printing technology to alleviate the organ shortage. It was a fun experience to learn a different field in
+            bio-engineering, and promote for them as a CS student.
+            <br /><br />Click <a href="https://psu.box.com/s/siuo6qf3avc7xru0bzuxoxw9utsj8g6e">here</a> to view the presentation slides</li>
+          </p>
+        </div>
+
+        <h3 class="grassAccordion" style="text-align:center;">ACM<span style="float:right;">+</span></h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">Association for Computing Machinery, Penn State</strong>
+            <strong style="float:right">University Park, PA</strong>
+            <br/>
+            <strong style="float:left">Member</strong>
+            <strong style="float:right">January 2014 - Present</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" /> The Penn State ACM is a student run organization all about
+            programming, software, hardware, and just about anything related to computer science and engineering.
+            <br /><br />As a member of ACM, I have attended technical workshops, corporate events and programming competitions.
+          </p>
+        </div>
+      </div>
+      <!-- left row accordion -->
+      <div class="col-md-6 accordion">
+        <h3 class="darkBlueAccordion" style="text-align:center;">CMPSC 101 TA<span style="float:right;">+</span></h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">College of Engineering, Penn State</strong>
+            <strong style="float:right">University Park, PA</strong>
+            <br/>
+            <strong style="float:left">Teaching Assistant</strong>
+            <strong style="float:right">September 2015 - December 2015</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" /> COMPSC 101 is a introductory Computer Science
+            class in C++.
+            <br /><br />As a TA, I provided guidance and support to students regarding course materials and assignments in C++
+            programming. In addition, I also assisted professor and other student mentors in grading 200 students’ assignments.
+          </p>
+        </div>
+
+        <h3 class="cryanAccordion" style="text-align:center;">Dining Hall Worker<span style="float:right;">+</span></h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">Pollock Dining Hall</strong>
+            <strong style="float:right">University Park, PA</strong>
+            <br/>
+            <strong style="float:left">Student Worker</strong>
+            <strong style="float:right">January 2014 - April 2014</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" /> This is technically the first job in my life.
+            A legit job where I work and get paid. Although the stuff I did as a dining worker was completely irrelevant to my field,
+            I have learned a lot about working ethics.
+            <br /><br />As a student worker, I have done many different jobs from bussing tables to making pizzas. It also gave me an
+            opportunity to interact with hundreds of customers everyday.
+          </p>
+        </div>
+
+        <h3 class="orangeAccordion" style="text-align:center;">Engineering Orientation Network<span style="float:right;">+</span></h3>
+        <div class="pane">
+          <p>
+            <strong style="float:left">College of Engineering, Penn State</strong>
+            <strong style="float:right">University Park, PA</strong>
+            <br/>
+            <strong style="float:left">Mentor</strong>
+            <strong style="float:right">May 2014 - May 2015</strong>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" /> EON is a student-run and student-oriented organization
+            in the College of Engineering to help introduce new students to the wonders of Penn State engineering. We were founded in 2011
+            when we realized as smart as PSU engineers are, an extra helping hand is never a bad idea. So we grew from accepting a small
+            group to accepting almost the entire incoming freshmen engineering class. We have created an orientation network of all types
+            of engineers and computer science students and are supported by various College of Engineering faculty and corporate sponsors.
+            <br /><br />I provided advice to six freshman mentees on academics and I also had presentations on utilizing school technologies.
+          </p>
+        </div>
+      </div>
+      <!-- right row accordion -->
+    </div>
+    <!-- container for the 2-row accordions-->
+  </div>
+
+
+  <div class="newyork">
+  </div>
+  <!-- iphone markup magicmockups.com-->
+  <div class="container" id="projects">
+    <center class="container row">
+      <h1 class="title">PROJECTS</h1>
+      <hr class="style-divider" />
+    </center>
+  </div>
+
+  <div id="columns">
+    <figure>
+      <img src="./images/project/caseta.jpg">
+      <h4>Scene Recommendation System</h4>
+      <h5><a href="http://www.lutron.com/" target="_blank">Lutron Electronics</a></h5>
+      <figcaption>I was assigned this project when I was a co-op. The goal for this project is to take customer usage data of home lights,
+      and then anaylyze the data to come up with "suggested scenes" for the customers to set up automated events for their smart home.
+      <br /><br />At first, I needed to set up a Java program that connects to cloud service provider, Xively, to observe the events from customers. Then another
+      program will take a couple weeks of data and anaylyze the data to find trends in them. Once the some trends are found, the program will send the data through Xively,
+      which the customers phones, in turn, will receive the suggestions.
+    </figcaption>
+    </figure>
+    <figure>
+      <img src="./images/project/boba.png">
+      <h4>Boba Vehicles</h4>
+      <h5><a href="https://github.com/vincwang/BobaVehicles" target="_blank">Github Repo</a></h5>
+      <figcaption>A web-application build with Node.Js for class project. This web platform allows users to sell and buy vehicles from suppliers. In addition,
+        it also provides bidding feature for customers like eBay. As the lead developer, I was involved in designing, implementing of the full application. The
+        backend of the project is uses Node.Js, and MySQL for database support. The frontend uses Express View Engine.
+        <br /><br />To view the project report, click <a href="https://drive.google.com/file/d/0B5wIrUFGxCPrM19sbi03c041MFE/view?usp=sharing" target="_blank">here</a>.</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/project/smartaway1.jpg">
+      <h4>Smart Away</h4>
+      <h5><a href="http://www.lutron.com/" target="_blank">Lutron Electronics</a></h5>
+      <figcaption>An iOS project that I was part of at Lutron Electronics, working on a Smart Home control system called Caseta Wireless.
+        This feature will allow users to set an "Smart Away" mode for the house, that will randomly change the lights in the house at night
+        time to make a home appeared "lived-in" while it's unoccupied.<br /><br />My main responsibilities include co-designing the feature spec and
+        implementing the functionalities on iOS. The App helps users set up the feature by selecting lights, activation mode (Manual/Automatic)
+        and etc. The App communicates with the system through a cloud service as many other iOT products.</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/project/ea-map.png">
+      <h4>Sales Map</h4>
+      <h5><a href="https://www.ediblearrangements.com/" target="_blank">Edible Arrangements</a></h5>
+      <figcaption>This was a project that I was assigned to as an intern at Edible Arrangements. I built this web application in ASP.NET, that takes in
+        sales data from Edible Arrangements' thousands of franchises, and map them onto an interactive map. This map allows the business team to view the
+      sales on the state level as well as indivisual store level. It's an interactive map built with Google Map API, retriving data from Microsoft SQL Server.</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/project/ggj.png">
+      <h5><a href="https://github.com/silverhammermba/ggj2016" target="_blank">Github Repo</a></h5>
+      <h5><a href="http://globalgamejam.org/2016/games/say-it-right-do-it-right" target="_blank">Project Page</a></h5>
+      <h4>Say it right, do it right.</h4>
+      <figcaption>A multi-language learning game in pixel graphics. Player learns vocab words by dragging and dropping words into sentences to make a character
+        repeat their daily routine. Then they watch the character act out the phrases whether they choose the right word or not!
+      <br /><br />This game was built with Unity.</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/project/beepbeep.png">
+      <h5><a href="https://github.com/Stateware/Beep-Beep" target="_blank">Github Repo</a></h5>
+      <figcaption>Beep Beep is a traffic system builder and simulator created by students for Dr. Vikash Gayah of Penn State University. The project primarily
+        utilizes Unity to create a program which allows a user to create and manipulate a traffic system in order to better understand how traffic works in a
+        simple and easy to use context. The work done on this project was done through STATEWARE (Students Taking Advantange of Their Education While Advancing
+        Research Efforts), a class that aims to simulate an industry environment while creating vital tools for researchers on campus.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./images/project/parkingbee.png">
+      <h5><a href="https://www.parkingbee.com/" target="_blank">ParkingBee</a></h5>
+      <figcaption>I have been working as a part-time full-stack web developer for ParkingBee. I work on MEAN stack web applications. My primary tasks include
+        design and development of new products and support existing applications. </figcaption>
+    </figure>
+
+  </div>
+
+  <div class="speech" id="talks">
+    <div class="container speechContainer">
+      <center class="container row">
+        <h1 class="title" style="color:#fff">TALKS</h1>
+        <hr class="style-divider"/>
+      </center>
+
+      <div class="itemsList">
+        <ul class="items">
+          <li><i class="fa fa-cog" aria-hidden="true"></i></li>
+          <li>Bioprinting Technology</li>
+          <li class="itemDesc">Leonhard Center Speaking Contest, 2015</li>
+
+          <li><i class="fa fa-black-tie" aria-hidden="true"></i></li>
+          <li>College Career Advice</li>
+          <li class="itemDesc">Provide mentorship to CS First-Year Seminar classes, 2017</li>
+
+        </ul>
       </div>
     </div>
+  </div>
 
-    <div class="container">     
-      <div class="col-sm-4">
-        <h2 class="resumeCategory">Work Experience</h2>
-      </div>        
-      <div class="col-sm-8">
-      	<h3 class="resumeTitle">Software Engineer Co-op</h3>
-        <h4 class="resumePlace"><strong>Lutron Electronics</strong>, Coopersburg PA January 2016 - August 2016 </h4>
-        <p class="resumeDetail">Working with a home automation team that engineers smart lighting control systems. 
-        <br>● Designed a recommendation system that analyzes user activity data and present the suggestion on application using Java, MySQL and Objective-C
-        <br>● Developed an “Away” mode feature on iOS using Objective-C for Caseta Smart Bridge that integrates with Nest Home/Away Assist
-        <br>● Built a data analysis program using C# that processes system-wide data and creates reports in Excel for marketing research purpose
-        </p>
-        <h3 class="resumeTitle">Software Development Intern</h3>
-        <h4 class="resumePlace"><strong>Edible Arrangements International</strong>, Wallingford CT May 2015 - August 2015 </h4>
-        <p class="resumeDetail">Worked with a diverse team that created software solutions for the franchise industry, mainly for <i><b> Edible Arrangements International </b></i> . 
-        <br>● Engineered a mapping analysis application using ASP.NET and Google Web API to analyze live sales data retrieved from SQL server
-        <br>● Integrated the company’s CRM portal with LogMeIn Rescue remote connection features using ASP.NET Visual Basic
-        <br>● Redesigned the navigation bar on edible.com and an outdated delivery APP login page using HTML, CSS and JavaScript
-        </p>
-        <h3 class="resumeTitle">Functional Test Intern</h3>
-        <h4 class="resumePlace"><strong>SoShare Mobile</strong>, Beijing China June 2014 - August 2014</h4>
-        <p class="resumeDetail"> A leading MVNO that focuses on corporate market <br>● Partnered with Product Design team to understand the functionalities of three projects, account management system on web, on mobile and on phone texting <br>● Designed test cases based on the system functionalities and user requirements <br>● Worked with Test Director and other Engineers to examine if cases cover all possibilities<br>● Executed complete testing flow and report testing results to Development Team</p>
-      </div>
+  <div id="awards">
+  <div class="container" >
+    <center class="container row">
+      <h1 class="title" style="color:#fff">AWARDS</h1>
+      <hr class="style-divider"/>
+    </center>
+
+    <div class="itemsList">
+      <ul class="items">
+        <li><i class="fa fa-users" aria-hidden="true"></i></li>
+        <li>2015 Leonhard Center Speaking Contest Semi-finalist</li>
+        <li class="itemDesc">I presented a talk on promoting bio-printing technology to alleviate organ shortage. Click <a href="https://psu.box.com/s/siuo6qf3avc7xru0bzuxoxw9utsj8g6e" style="color:#fff;text-decoration: underline;">here</a> to view slides</li>
+
+        <li><i class="fa fa-certificate" aria-hidden="true"></i></li>
+        <li>Engineering Career Envoy Scholarship, 2016</li>
+        <li class="itemDesc">I have been an Engineering Career Envoy since Fall 2015. As an envoy. As an envoy, I help organize events by the career office and help students to prepare for career events</li>
+
+        <li><i class="fa fa-graduation-cap" aria-hidden="true"></i></li>
+        <li>Dean's List</li>
+        <li class="itemDesc">Fall 2013, Fall 2014, Spring 2015, Fall 2015, FALL 2016</li>
+
+        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+        <li>Most Improved Player, Third Place at Regional</li>
+        <li class="itemDesc">CSCS Varsity Tennis</li>
+      </ul>
     </div>
+  </div>
+</div>
 
-    <div class="container">     
-      <div class="col-sm-4">
-        <h2 class="resumeCategory">Campus Involvement</h2>
-      </div>        
-      <div class="col-sm-8">
-      	<h3 class="resumeTitle">CMPSC 101 Student Mentor</h3>
-        <h4 class="resumePlace"><strong>College of Engineering</strong>, University Park PA September 2015 - December 2015</h4>
-        <p class="resumeDetail">
-        <br>● Provided guidance and support to students regarding course materials and assignments in C++ programming
-        <br>● Assisted professor and other student mentors in grading 200 students’ assignments
-        </p>
-        <h3 class="resumeTitle">Webmaster & Recruitment Chair</h3>
-        <h4 class="resumePlace"><strong>Paws of Friendship</strong>, University Park PA October 2013 - May 2015</h4>
-        <p class="resumeDetail">We are a service club that aims to provide members with service opportunities that will provide support for displaced children through the donation and distribution of stuffed animals. 
-        <br>● Self-built and maintained the club website to present club news and events
-        <br>● Recruited new members at involvement fairs and managed club ListServ account
-        <br>● Participated in various activities including bake sales, community events and THON 
-        </p>
-        <h3 class="resumeTitle">Mentor</h3>
-        <h4 class="resumePlace"><strong>Engineering Orientation Network</strong>, University Park PA Fall 2014 - May 2015</h4>
-        <p class="resumeDetail">● Provided advice to six first-year mentees on academics <br>● Demonstrated how to use school webmail, course management system and eLion </p>
-        <h3 class="resumeTitle">ACM Member</h3>
-        <h4 class="resumePlace"><strong>Association for Computing Machinery</strong>, University Park PA Jan 2014 - Present</h4>
-        <p class="resumeDetail">
-        ● Cooperated with Civil Engineering Department to create a basic user controlled traffic simulator to analyze vehicle traffic scenarios using Unity framework 
-        <br>● Coding Competitions: CodePSU 14, 15 and Microsoft College Code Competition 15
-        </p>
-      </div>
-    </div>
+  <div class="back">
+    <img src="./images/background/collegewall.jpg">
+  </div>
 
-    <div class="container">     
-      <div class="col-sm-4">
-        <h2 class="resumeCategory">Awards</h2>
-      </div>        
-      <div class="col-sm-8">
-        <h3 class="resumeTitle">Speech Contest Semi-finalist</h3>
-        <h4 class="resumePlace"><strong>2015 Leonhard Center Speaking Contest</strong>, University Park PA April 2015</h4>
-        <h3 class="resumeTitle">Engineering Envoy Scholarship</h3>
-        <h4 class="resumePlace"><strong>Penn State College of Engineering</strong>, University Park PA December 2015</h4>
-        <h3 class="resumeTitle">Dean's List</h3>
-        <h4 class="resumePlace"><strong>Penn State College of Engineering</strong>, Fall 2015, Spring 2015, Fall 2014 & Fall 2013</h4>
-        <h3 class="resumeTitle">Most Improved Player</h3>
-        <h4 class="resumePlace"><strong>Colorado Springs Christian School - Varsity Tennis</strong>, Spring 2013</h4>
-      </div>
-    </div>
-</div>   <!-- Row Resume -->
-
-
-
-
-<div class="mainSection container" id="contact">
+  <div class="container" id="contact">
     <center class="container row">
       <h1 class="title">CONTACT</h1>
-      <hr class="style-divider"/>          
+      <hr class="style-divider"/>
     </center>
 
     <center>
@@ -384,7 +466,7 @@
       <h4>Currently seeking internship opportunities in Computer Science for Summer 2017</h4>
       -->
     </center>
- 
+
       <ul class="contactAddress" >
         <li class="envelope"><i class="fa fa-envelope fa-lg"></i></li>
         <li class="emailAddress"><a href="mailto:v_wang@outlook.com">v_wang@outlook.com</a></li>
@@ -392,31 +474,32 @@
         <li class="envelope"><i class="fa fa-phone fa-lg"></i></li>
         <li>USA: 814-321-8725</li>
 
-        <li class="resumeDownload"><a href="file/YuehuiWangResume.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-lg"></i>Resume</a></li>
+        <li class="resumeDownload">
+          <div class="clickButton">
+            <a href="file/YuehuiWangResume.pdf" target="_blank">Resume <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+          </div>
+        </li>
       </ul>
-    
+
       <ul class="social">
         <li class="github"><a href="https://github.com/vincwang" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>
         <li class="linkedin"><a href="https://linkedin.com/in/vincwang" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
       </ul>
-</div>   <!-- contact mainSection-->
+  </div>
 
+  <footer>
+    <h1 class="bottomGoodbye">Thank you for visiting!</h1>
+    <p class="copyright">A Self-built Website</p>
+    <p class="copyright">&copy; 2017 Yuehui Wang. All Rights Reserved</p>
+  </footer>
 
-<footer>
-      <h1 class="bottomGoodbye">Thank you for visiting!</h1>
-      <p class="copyright">&copy; 2015 Yuehui Wang. All Rights Reserved</p>
-</footer>
-  <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <!-- USE CDN as below
-  <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/myscript.js"></script>
+  <script type="text/javascript" src="js/myjs.js"></script>
+  <script type="text/javascript" src="js/smoothScroll.js"></script>
+  <script type="text/javascript" src="js/lightbox.js"></script>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script>
+    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -427,4 +510,5 @@
 
   </script>
 </body>
+
 </html>

@@ -1,350 +1,385 @@
-/* Table of Contents
-----------------------------------------------------
-- General Content
-- Typography
-- Header & Navigation
-- Image & Media
-- Footer
-- Media Queries
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica,Arial,sans-serif;
+}
+
+
+/* Calligraphy
 ---------------------------------------------------- */
 
-/* General Content
----------------------------------------------------- */
-.mainBlock{padding-top: 3%;}
-.row{padding:2% 0;}
-.resume{background-color: #3F3E4C;}
+h2.title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.7em;
+  color: #132530;
+  display: block;
+  padding: 20px 10px;
 
-.centerParagraph {
-	padding: 2% 15%;	
-	position: relative;
 }
-
-
-.accordion {
-    margin:1em 0;
-    padding: 30px 10px;
-}
-
-.accordion h3 {
-    background: #828282;
-    font-family: 'Abel';
-    font-weight: bolder;
-    text-shadow: 0px 0px 3px #000;
-    text-align: center;
-    color:#fff;
-    cursor:crosshair;
-    margin:0 0 1px 0;
-    background-repeat: no-repeat;
-    background-position: 10px;
-    padding:30px 10px;
-    margin: 10px;
-}
-
-.accordion h3:hover{
-    background: #132530;
-    background-repeat: no-repeat;
-    background-position: 10px;
-}
-
-.accordion div.pane {
-    padding:5px 10px
-}
-
-
-.pane {
-	margin: 1% 10px;
-	padding: 5px 5px;
-}
-
-.projectLink {	
-	border: 3px solid #132530;	
-	color: #132530;
-	text-align: center;
-	padding: 2px 5px;
-	margin: 2px 2px;
-	display: inline-block;
-}
-
-.projectLink i{
-	padding: 0 0 0 2px;
-}
-
-.pane a.projectLink:hover{
-	text-decoration: none;
-	background-color: #132530;
-	color: #fff;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-
-hr.style-divider {
-    padding: 0;
-    border: none;
-    border-top: 2px solid #ccc;
-    color: #ccc;
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto 50px auto;
-}
-hr.style-divider:after {
-    content: "";
-    width: 15px;
-  	height: 15px;
-    display: inline-block;
-    position: relative;
-    top: -.4em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    
-    background-color: #8b8b8b;
-  	transform: rotate(45deg);
-  	-ms-transform: rotate(45deg);
-  	-webkit-transform: rotate(45deg);
-}
-
-
-
-/* Typography
----------------------------------------------------- */
-body{
-	font-family: 'Abel', sans-serif;
-	font-size: 1.5em;
-	color: #000;
-	padding-top: 60px;
-	position: relative;
-}
-
-
-h2.introName{
-	font-family: 'Julius Sans One', sans-serif;	
-	font-size: 7vw;
-	display: inline-block;
-	color: #eeeeee;
-	display: block;
-	font-weight: bolder;
-}
-
-p.introduction {
-	font-size: 1.1em;
-}
-
-p.bio{
-	font-family: 'Julius Sans One', sans-serif;	
-	font-size: 3vw;
-	margin-bottom: 0.5em;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-
-
-h1.title{
-	font-family: 'Julius Sans One', sans-serif;	
-	font-size: 2.5em;
-	color:#132530;
-	display: block;
-}
-
-
-
-h1.quote{
-	font-family: Arial;
-	text-align: center;
-	font-size: 7vw;
-	letter-spacing: 5px;
-	color: #132530;
-	text-shadow: 0px 0px 2px #FFFFFF;
-}
-
-h2.quote{
-	font-family: 'Julius Sans One', sans-serif;	
-	text-align: center;
-	display: block;
-	font-size: 3vw;
-	margin: 0em 3em 1em 3em;
-	color: #FFFFFF;
-	font-weight: bolder;
-	background-color: #d8d8d8;
-}
-
-h2.title{
-	font-family: 'Julius Sans One', sans-serif;	
-	font-size: 1.7em;
-	color: #132530;
-	display: block;
-	padding: 20px 10px;
-}
-
-.centerParagraph p{
-	text-align: center;
-}
-
-
-h2.resumeCategory{
-	font-family: 'Julius Sans One', sans-serif;
-	color: #FFFFFF;
-}
-
-
-h3.resumeTitle{
-	font-family: 'Julius Sans One', sans-serif;
-	font-weight: bold;
-	color: #FFFFFF;
-	font-size: 20px;
-}
-
-p.resumeDetail{
-	font-family: 'Abel',sans-serif;
-	color: #eeeeee;
-	font-size: 15px;
-}
-
-h4.resumePlace{
-	font-family: 'Abel',sans-serif;
-	color: #FFFFFF;
-	font-size: 17px;
-	margin: 10px 0px 5px 0px;
-}
-
 
 
 /* Header & Navigation
 ---------------------------------------------------- */
-.navbar-brand{
-	margin: 15px 0 15px 0;
-	float: left;
-	text-align: center;
-}
-.navbar-brand a{
-	display: inline;
-	font-size: 2.5em;
-	color: #132530;
-	text-decoration: none;
-	border: 3px solid #132530;
-	text-transform: uppercase;
-	padding: 1px 10px 0px 10px;
-	margin: 0;
+
+.menu-content>a {
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
-.navbar-brand a:hover{
-	background-color: #132530;
-	color: #fff;
-	border: 3px solid #132530;
-	-webkit-transition: all 400ms ease;
-	-moz-transition: all 400ms ease;
-	-ms-transition: all 400ms ease;
-	-o-transition: all 400ms ease;
-	transition: all 400ms ease;
+.navbar-default .navbar-nav>li>a {
+  color: #FDFEFE;
+  padding-top: 25px;
 }
 
-.navbar-toggle {
-	margin: 1.3em 2em;
+.navbar {
+  background-color: transparent;
 }
 
-.menu-content a{
-	font-weight: bold;
-	font-size: 1.2em;
-	font-family:'Julius Sans One', sans-serif;	
-	margin: 0px auto;
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
 }
 
-div.welcomeHeader {	
-	background-image: url(../images/background/welcome.jpg);
-	background-size: cover; 
-	background-repeat: no-repeat;
+.vincentwang {
+  margin: 5px 0px 5px 0px;
+  float: left;
+  text-align: center;
+}
+
+.vincentwang>a {
+  font-family: 'Julius Sans One', sans-serif;
+  display: inline;
+  font-size: 3em;
+  font-weight: 500;
+  color: #FDFEFE;
+  text-decoration: none;
+  border: 2px solid #FDFEFE;
+  padding: 1px 10px 0px 10px;
+  margin: 0;
+}
+
+
+/* Openning
+---------------------------------------------------- */
+
+.openning {
+  min-width: 1000px;
+}
+
+.openning img {
+  display: block;
+  max-width: 100%;
 }
 
 div.welcomeQuote {
-	margin: 5em 2em 6em 2em;
-	float: right;
-	top: 20%;
-  	left: 7%;
-  	text-align: center;
+  margin: 5em 2em 6em 2em;
+  float: right;
+  top: 20%;
+  left: 7%;
+  text-align: center;
 }
 
-#navbarSocial {
-	margin: -10px 0 0 0;
-}
 
-/* Image & Media
+/* About Me
 ---------------------------------------------------- */
-.loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('../images/logo/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+
+#infoWrapper {
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
 }
 
-img{max-width: 100%;}
-img.lifePic{
-	border-radius: 5px;
+.introContainer {
+  margin: 0px;
+  width: 100%;
+  position: relative;
+  display: table;
+  min-height: 400px;
+}
+
+.aboutMeDesc {
+  display: table-cell;
+  width: 50%;
+  background-color: #8b8b8b;
+}
+
+.aboutMePic {
+  display: table-cell;
+  width: 50%;
+  background-image: url('../images/profile/skydeck.jpg');
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+p.selfIntroduction {
+  padding: 2em 2em 2em 2em;
+  vertical-align: middle;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .introContainer {
+    display: block;
+  }
+  .aboutMeDesc, .aboutMePic {
+    display: inline-block;
+    width: 100%;
+  }
+  .aboutMePic {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+  }
+}
+
+img.gallaryPic {
 	text-align: center;
-	margin: .3em auto;
+  max-width: 100%;
 }
-.portfolio img:hover{opacity:0.8;}
-.portfolio {
+
+.newyork {
+  /* The image used */
+    background-image: url('../images/background/newyork.jpg');
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Experience
+---------------------------------------------------- */
+.back img{
+    display: block;
+    max-width: 100%;
+}
+
+/* Resume
+---------------------------------------------------- */
+
+.resume {
+  height: 10000px;
+}
+
+
+/* Layout
+---------------------------------------------------- */
+
+h1.title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  color: #132530;
+  display: block;
+  padding: 50px 0px 0px 0px;
+}
+
+h4.title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2em;
+  color: #132530;
+  display: block;
+  padding: 30px 0px 0px 0px;
+}
+
+hr.style-divider {
+  padding: 0;
+  border: none;
+  border-top: 2px solid #ccc;
+  color: #ccc;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto 50px auto;
+}
+
+hr.style-divider:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  top: -.4em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background-color: #8b8b8b;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+
+/* Acoordian
+---------------------------------------------------- */
+.accordion {
+  margin: 1em 0;
+  padding: 10px 10px;
+}
+
+.accordion h3 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
+  text-align: right;
+  line-height: 60px;
+  cursor: crosshair;
+  background-color: #8b8b8b;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: auto;
+  color: #fff;
+  position: relative;
+  padding: 20px 20px;
+  min-height: 100px;
+}
+.trx {
+  text-align: right;
+}
+
+.accordion h3:hover {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.accordion div.pane {
+  padding: 5px 10px
+}
+
+.accordion div.pane p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3.blueAccordion:hover {
+  background-color: #28abe3;
+}
+
+h3.orangeAccordion:hover {
+  background-color: #da4624;
+}
+
+h3.greenAccordion:hover {
+  background-color: #219a71;
+}
+
+h3.yellowAccordion:hover {
+  background-color: #ffc107;
+}
+
+h3.navyAccordion:hover {
+  background-color: #354458;
+}
+
+h3.cryanAccordion:hover {
+  background-color: #29aba4;
+}
+
+h3.pinkAccordion:hover {
+  background-color: #eb7260;
+}
+
+h3.darkBlueAccordion:hover {
+  background-color: #4298b5;
+}
+
+h3.jadeAccordion:hover {
+  background-color: #7accc8;
+}
+
+h3.grassAccordion:hover {
+  background-color: #8bad39;
+}
+
+h3.jadeAccordion:hover {
+  background-color: #7accc8;
+}
+
+
+/* Speech
+---------------------------------------------------- */
+.speech {
+  background-image: url('../images/project/speech.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  color: #fff;
+}
+
+/* Awards
+---------------------------------------------------- */
+#awards {
+  background-color: #354458;
+  color: #fff;
+}
+
+.itemsList {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+ul.items {
+	display: inline;
+	list-style-type: none;
 	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px 40px 0 0;
 }
 
-#contentd {
-	height: 750px;
-	width: 100%;
-	margin-top:-10px; 
-	position: relative;
-	z-index: 1;
+ul.items li {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin: 10px 0;
 }
 
-.parallexBanner {
-	position: relative;
+ul.items li.itemDesc {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  margin: 15px 0;
+  font-size: 1.1em;
+  margin-bottom: 30px;
 }
 
-#newyorkBackground {
-	position: relative;
-	z-index: -1;
-	padding: 0 0;
-	margin: -970px 0px 0px 0px;
-	height: auto;
-	width: 110%;
-}
-
-.inpageSocial {
-	margin: 2% auto;
+/* Contact
+---------------------------------------------------- */
+ul.contactAddress {
+	display: block;
+	list-style-type: none;
 	text-align: center;
+	font-family: Arial, sans-serif;
+	margin: 0px 40px 0 0;
 }
 
-.inpageSocial a{
+ul.contactAddress li.emailAddress a {
 	text-decoration: none;
-	border: 3px solid #132530;
-	padding: 3px 5px;
-	color: #132530;
-	text-align: center;
+	color: #000;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+ul.contactAddress li.emailAddress a:hover {
+  color: rgb(34, 134, 187);
 }
 
-.inpageSocial a i{
-	padding: 0 0 0 2px;
+ul.contactAddress li{
+	margin: 1.5em auto;
 }
 
-.inpageSocial a:hover{
-	background-color: #132530;
-	color: #fff;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-
-
-
-/* Footer
----------------------------------------------------- */
 ul.social{
-	display: block;	
+	display: block;
 	list-style-type: none;
 	text-align: center;
 	margin: 10px 40px 30px 0;
@@ -358,64 +393,14 @@ ul.social li a{
 	color: #666;
 }
 
-
 ul.social li.instagram a:hover{color: #843232;}
 ul.social li.linkedin a:hover{color: rgb(34, 134, 187);}
 ul.social li.github a:hover{color: #bc4c4c;}
 
-
-ul.contactAddress {
-	display: block;
-	list-style-type: none;
-	text-align: center;	
-	font-family: Arial, sans-serif;
-	margin: 0px 40px 0 0;
-}
-
-ul.contactAddress li.emailAddress a {
-	text-decoration: none;
-	color: #000;
-	letter-spacing: 1px;
-	font-size: 15px;
-}
-ul.contactAddress li.emailAddress a:hover {color: rgb(34, 134, 187);}
-
-ul.contactAddress li{
-	margin: 1.5em auto;
-}
-
-.resumeDownload{
-
-	text-align: center;
-}
-
-.resumeDownload a{
-	font-size: 1.5em;
-	color: #000;
-	text-decoration: none;
-	border: 3px solid #000;
-	text-transform: uppercase;
-	padding: 10px 5px;
-}
-
-.resumeDownload a i{
-	font-size: 1em;
-	margin: 5% auto;
-	padding: 2px 4px;
-}
-
-.resumeDownload a:hover{
-	background-color: #000;
-	color: #fff;
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
-}
-
+/* Footer
+---------------------------------------------------- */
 footer{
-	background-color:#3F3E4C;
+	background-color:#354458;
 	text-align: center;
   	position: relative;
   	padding: 20px 15px 5px 15px;
@@ -423,19 +408,42 @@ footer{
 
 
 h1.bottomGoodbye{
-	font-family: 'Julius Sans One', sans-serif;	
+	font-family: 'Julius Sans One', sans-serif;
 	font-size: 2.5em;
 	color:#FFFFFF;
 	display: block;
 	text-align: center;
-
 }
 
 p.copyright{
 	text-align: center;
-	color: #666;
+	color: #B3B6B7;
 	font-size: 1em;
 }
 
-/* Media Queries
+/* Elements (Button)
 ---------------------------------------------------- */
+.clickButton {
+	margin: 2% 0;
+  text-align: center;
+}
+
+.clickButton a{
+  border: 3px solid #132530;
+  display: inline-block;
+	text-decoration: none;
+	padding: 3px 5px;
+	color: #132530;
+	text-align: center;
+}
+
+.clickButton a:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
