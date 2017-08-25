@@ -452,6 +452,7 @@ p.copyright{
 }
 
 .clickButton a{
+  font-size: 1.5em;
   border: 3px solid #132530;
   display: inline-block;
 	text-decoration: none;
