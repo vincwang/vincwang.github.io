@@ -9,12 +9,11 @@ html, body {
 ---------------------------------------------------- */
 
 h2.title {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.7em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
   color: #132530;
   display: block;
   padding: 20px 10px;
-
 }
 
 
@@ -347,11 +346,35 @@ ul.items li {
 }
 
 ul.items li.itemDesc {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   margin: 15px 0;
   font-size: 1.1em;
   margin-bottom: 30px;
+}
+
+
+/* Videos
+---------------------------------------------------- */
+#videos {
+  background-color: #dc403b;
+  padding-bottom: 20px;
+}
+
+a.youtubeLink {
+  text-decoration : none;
+}
+
+.thumbnail {
+  box-shadow: 0 5px 5px rgba(34, 25, 25, 0.4);
+  position: relative;
+  padding: 0px;
+  margin-bottom: 20px;
+  border-radius: 0 !important;
+}
+
+.thumbnail img {
+    width: 100%;
 }
 
 /* Contact
