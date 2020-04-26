@@ -108,7 +108,7 @@ div.welcomeQuote {
 .aboutMePic {
   display: table-cell;
   width: 50%;
-  background-image: url('../images/profile/skydeck.jpg');
+  background-image: url('../images/profile/sphere.jpg');
   background-size: cover;
   background-position: 50% 0%;
 }
