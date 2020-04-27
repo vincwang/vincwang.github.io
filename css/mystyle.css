@@ -123,6 +123,11 @@ p.selfIntroduction {
   font-size: 18px;
 }
 
+p.selfIntroduction a {
+  color:#FF0000;
+  text-decoration:none;
+}
+
 @media screen and (max-width: 800px) {
   .introContainer {
     display: block;
