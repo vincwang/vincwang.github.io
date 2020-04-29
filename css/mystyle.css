@@ -102,7 +102,7 @@ div.welcomeQuote {
 .aboutMeDesc {
   display: table-cell;
   width: 50%;
-  background-color: #8b8b8b;
+  background-color: #001f3f;
 }
 
 .aboutMePic {
@@ -124,7 +124,7 @@ p.selfIntroduction {
 }
 
 p.selfIntroduction a {
-  color:#2b6ba2;
+  color:#71ADE9;
   text-decoration:none;
 }
 
@@ -381,6 +381,7 @@ a.youtubeLink {
 .thumbnail img {
     width: 100%;
 }
+  
 
 /* Contact
 ---------------------------------------------------- */
