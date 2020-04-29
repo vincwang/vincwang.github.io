@@ -56,9 +56,11 @@
     <center class="container row">
       <h1 class="title">ABOUT ME</h1>
       <hr class="style-divider" />
+      <!--
       <div class="clickButton">
           <a href="file/Yuehui_Wang_Resume.pdf" target="_blank">Resume <i class="fa fa-file-pdf-o fa-lg"></i></a>
       </div>
+      -->
     </center>
   </div>
 
@@ -348,6 +350,7 @@
   <div class="container" id="projects">
     <center class="container row">
       <h1 class="title">PROJECTS</h1>
+      <h5>Personal, internship, and Hackathon projects</h4>
       <hr class="style-divider" />
     </center>
   </div>
@@ -357,9 +360,10 @@
       <img src="./images/project/alexa-covid19-tracker.png">
       <h4>Alexa Coronavirus Tracker</h4>
       <h5><a href="https://github.com/vincwang/alexa-covid19-tracker" target="_blank">Github Repo</a></h5>
-      <figcaption>In light of the difficult times caused by the Covid19 crisis. I built an Alexa Coronavirus tracker that enables Alexa to tell users information about coronavirus cases in a state or a country. It can also answer questions like "What are the top 10 states with most cases?".
+      <figcaption>In light of this difficult time caused by the COVID19 crisis. I built an Alexa Coronavirus tracker that enables Alexa to tell users information about coronavirus cases in a state or a country. It can also answer questions like "What are the top 10 states with most cases?".
 
-      <br/><br/>This was developed on Alexa Developer Console. The backend was done using Node.js to create the skills, AWS Lambda to host the skill and AWS S3 buckets to store information. The data is fetched from Novel Covid19 API.
+      <br/><br/>This was developed on Alexa Developer Console. The backend was done using Node.js to create the skills, AWS Lambda to host the skill and AWS S3 buckets to store information. The data is fetched from Novel COVID19 API.
+      <br/><br/>Unfortunately, this can't be published on Alexa Skills Store, because Amazon is limiting skills about COVID-19 to ensure accuracy of information.
     </figcaption>
     </figure>
 
@@ -375,11 +379,24 @@
     
     <figure>
       <img src="./images/project/beepbeep.png">
+      <h4>Traffic system simulator</h4>
       <h5><a href="https://github.com/Stateware/Beep-Beep" target="_blank">Github Repo</a></h5>
       <figcaption>Beep Beep is a traffic system builder and simulator created by students for Dr. Vikash Gayah of Penn State University. The project primarily
         utilizes Unity to create a program which allows a user to create and manipulate a traffic system in order to better understand how traffic works in a
         simple and easy to use context. The work done on this project was done through STATEWARE (Students Taking Advantange of Their Education While Advancing
         Research Efforts), a class that aims to simulate an industry environment while creating vital tools for researchers on campus.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./images/project/alexa-dc-metro-status.png">
+      <h4>Alexa WMATA DC Metro Status</h4>
+      <h5><a href="https://github.com/vincwang/alexa-dc-metro-status" target="_blank">Github Repo</a></h5>
+      <h5><a href="https://www.amazon.com/gp/product/B087RP35L2?ref&ref=cm_sw_em_r_as_dp_tMFDlD3s014KL" target="_blank">Amazon Store</a></h5>
+      <figcaption>
+        An alexa skill to provide real time train arrivale information in DC metro area. You can now say "Next Silver line train at Metro Center station" to her!
+        <br/><br/>
+        This was developed on Alexa Developer Console. The backend was done using Node.js to create the skills and AWS Lambda to host the skill. The data is fetched from WMATA API.
+      </figcaption>
     </figure>
 
     <figure>
@@ -393,20 +410,12 @@
         and etc. The App communicates with the system through a cloud service as many other iOT products.</figcaption>
     </figure>
 
-    <figure>
-      <img src="./images/project/ea-map.png">
-      <h4>Sales Map</h4>
-      <h5><a href="https://www.ediblearrangements.com/" target="_blank">Edible Arrangements</a></h5>
-      <figcaption>This was a project that I was assigned to as an intern at Edible Arrangements. I built this web application in ASP.NET, that takes in
-        sales data from Edible Arrangements' thousands of franchises, and map them onto an interactive map. This map allows the business team to view the
-      sales on the state level as well as indivisual store level. It's an interactive map built with Google Map API, retriving data from Microsoft SQL Server.</figcaption>
-    </figure>
 
     <figure>
       <img src="./images/project/ggj.png">
+      <h4>Say it right, do it right.</h4>
       <h5><a href="https://github.com/silverhammermba/ggj2016" target="_blank">Github Repo</a></h5>
       <h5><a href="http://globalgamejam.org/2016/games/say-it-right-do-it-right" target="_blank">Project Page</a></h5>
-      <h4>Say it right, do it right.</h4>
       <figcaption>A multi-language learning game in pixel graphics. Player learns vocab words by dragging and dropping words into sentences to make a character
         repeat their daily routine. Then they watch the character act out the phrases whether they choose the right word or not!
       <br /><br />This game was built with Unity.</figcaption>
@@ -416,12 +425,20 @@
       <img src="./images/project/caseta.jpg">
       <h4>Scene Recommendation System</h4>
       <h5><a href="http://www.lutron.com/" target="_blank">Lutron Electronics</a></h5>
-      <figcaption>I was assigned this project when I was a co-op. The goal for this project is to take customer usage data of home lights,
-      and then anaylyze the data to come up with "suggested scenes" for the customers to set up automated events for their smart home.
-      <br /><br />At first, I needed to set up a Java program that connects to cloud service provider, Xively, to observe the events from customers. Then another
+      <figcaption>A project I did during my Co-op at Lutron. The goal for this project is to take customer usage data of home lights, and anaylyze the data to come up with "suggested scenes" for the customers to set up automated events for their smart home.
+      <br /><br />I set up a Java program that connects to cloud service provider, Xively, to observe the events from customers. Then another
       program will take a couple weeks of data and anaylyze the data to find trends in them. Once the some trends are found, the program will send the data through Xively,
       which the customers phones, in turn, will receive the suggestions.
     </figcaption>
+    </figure>
+
+    <figure>
+      <img src="./images/project/ea-map.png">
+      <h4>Interactive Sales Map</h4>
+      <h5><a href="https://www.ediblearrangements.com/" target="_blank">Edible Arrangements</a></h5>
+      <figcaption>This was a project that I was assigned to as an intern at Edible Arrangements. I built this web application in ASP.NET, that takes in
+        sales data from Edible Arrangements' thousands of franchises, and map them onto an interactive map. This map allows the business team to view the
+      sales on the state level as well as indivisual store level. It's an interactive map built with Google Map API, retriving data from Microsoft SQL Server.</figcaption>
     </figure>
 
     <figure>
@@ -429,6 +446,16 @@
       <h5><a href="https://www.parkingbee.com/" target="_blank">ParkingBee</a></h5>
       <figcaption>I worked as a part-time full-stack web developer for ParkingBee using MEAN stack. My primary tasks include design and develop new features as well as support existing functionalities. One of the features I worked on was to build a referral system and keep track of referral points.</figcaption>
     </figure>
+
+      <figure>
+        <img src="./images/project/chatbot.jpg">
+        <h4>Recruiter Chat Bot</h4>
+        <h5><a href="https://youtu.be/yHAyHNM2te4" target="_blank">Demo on YouTube</a></h5>
+        <figcaption>This was a Hackathon project that I worked on while working at Appian. It's a chat bot designed to answer questions for job seekers that are interested in Appian. The chatbot is able to answer questions about job listings and company information. It can also answer more specific questions such as GPA requirements, Immigration policy and etc!
+        <br /><br />
+        Disclaimer: This is a hackathon project, not an offical tool used at or developed by Appian.
+        </figcaption>
+      </figure>
 
   </div>
 
@@ -561,12 +588,13 @@
       <ul class="contactAddress" >
         <li class="envelope"><i class="fa fa-envelope fa-lg"></i></li>
         <li class="emailAddress"><a>v_wang[AT]outlook[DOT]com</a></li>
-
+        <!--
         <li class="resumeDownload">
           <div class="clickButton">
             <a href="file/Yuehui_Wang_Resume.pdf" target="_blank">Resume <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
           </div>
         </li>
+        -->
       </ul>
 
       <ul class="social">
